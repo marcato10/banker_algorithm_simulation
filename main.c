@@ -9,6 +9,7 @@
 int main() {
     const int size = 4;
     srand(time(NULL));
+
     //Mude para 1 caso queira que os recursos disponíveis são aleatórios
     bool random = 0;
 
@@ -17,7 +18,8 @@ int main() {
     total_resources.size = 0;
     Reserve(&total_resources,size);
     if(random == 0){
-        int initial[4] = {8,4,6,7};
+
+        int initial[8] = {8,4,6,7,5,10,6,8};
         for(int i = 0;i < size;i++){
             total_resources.data[i] = initial[i];
         }
@@ -133,8 +135,6 @@ int main() {
     queueExecute(&running_process,avaliable_resources.data,column);
 
     //Desaloca memória (evita memory leak)
-
-
     for(int i = 0; i < row;i++){
         free(resources_request[i]);
     }
