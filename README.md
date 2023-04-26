@@ -1,2 +1,2 @@
-# banker_algorithm_simulation
-Implementação do algoritmo do Banqueiro para fins acadêmicos.
+# Algoritmo do Banqueiro
+Implementação que simula o algoritmo do banqueiro usando a linguagem C.
